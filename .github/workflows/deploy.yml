@@ -13,17 +13,12 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v3
-      - name: Build site (no-op if none)
-        run: |
-          if [ -f package.json ]; then
-            if npm run | grep -q "build"; then
-              npm ci
-              npm run build
-            fi
-          fi
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: '.'
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        id: deployment
+        uses: actions/deploy-pages@v4
