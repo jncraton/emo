@@ -1,5 +1,6 @@
 # Emoji Picker
 
+[![Lint](https://github.com/jncraton/emo/actions/workflows/lint.yml/badge.svg)](https://github.com/jncraton/emo/actions/workflows/lint.yml)
 [![Test](https://github.com/jncraton/emo/actions/workflows/test.yml/badge.svg)](https://github.com/jncraton/emo/actions/workflows/test.yml)
 [![Deploy](https://github.com/jncraton/emo/actions/workflows/deploy.yml/badge.svg)](https://github.com/jncraton/emo/actions/workflows/deploy.yml)
 
