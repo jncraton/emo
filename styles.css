@@ -76,7 +76,7 @@ input[type=search]{
   border-radius:6px;
 }
 
-#count,#copied{
+#count{
   position:absolute;
   right:0;
   top:calc(1.25rem + 1.25rem);
@@ -84,6 +84,15 @@ input[type=search]{
   color:var(--muted);
   padding:0.25rem 0.5rem;
 }
+
+#results button #copied{
+  margin-left:auto;
+  background:transparent;
+  color:var(--muted);
+  padding:0 0.35rem;
+  font-size:0.9rem;
+}
+
 
 .visually-hidden{
   position:absolute!important;

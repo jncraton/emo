@@ -40,6 +40,8 @@
     results.innerHTML = '';
     count.textContent = `${list.length} results`;
     count.hidden = false;
+    // ensure copied indicator is hidden by default
+    copied.hidden = true;
     if(list.length===0){
       const li = document.createElement('li');
       li.textContent = 'No results';
@@ -56,6 +58,8 @@
       btn.innerHTML = `<span class="emoji">${escapeHtml(item.emoji)}</span><span class="name">${escapeHtml(item.name)}</span>`;
       btn.addEventListener('click', ()=>{
         copyToClipboard(item.emoji).then(()=>{
+          // move the copied indicator into the clicked result and show it
+          btn.appendChild(copied);
           copied.hidden = false;
           setTimeout(()=>copied.hidden=true, 1200);
         });
@@ -63,11 +67,15 @@
       li.appendChild(btn);
       results.appendChild(li);
     });
-    // auto-copy first result
+    // auto-copy first result and show copied indicator inside it
     if(list[0]){
       copyToClipboard(list[0].emoji).then(()=>{
-        copied.hidden = false;
-        setTimeout(()=>copied.hidden=true, 700);
+        const firstBtn = results.querySelector('button');
+        if(firstBtn){
+          firstBtn.appendChild(copied);
+          copied.hidden = false;
+          setTimeout(()=>copied.hidden=true, 700);
+        }
       });
     }
   }
