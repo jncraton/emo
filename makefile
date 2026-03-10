@@ -19,4 +19,4 @@ test:
 deploy: dep.css
 
 clean:
-	rm -rf .pytest_cache __pycache__ dep.css
+	rm -rf .pytest_cache __pycache__ dep.css tests/__pycache__
