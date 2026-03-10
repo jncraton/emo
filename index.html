@@ -8,10 +8,9 @@
 </head>
 <body>
   <main class="app">
-    <h1 id="title">Emoji Picker</h1>
     <label for="q" class="visually-hidden">Search emojis</label>
-    <input id="q" type="search" placeholder="Type to search emojis" autocomplete="off" />
-    <div id="count" aria-live="polite"></div>
+    <input id="q" type="search" placeholder="Type to search emojis" autocomplete="off" autofocus />
+    <div id="count" aria-live="polite" hidden></div>
     <ul id="results" role="listbox" aria-label="Emoji results"></ul>
     <div id="copied" role="status" aria-live="polite" hidden>Copied</div>
   </main>

@@ -39,6 +39,7 @@
   function render(list, q){
     results.innerHTML = '';
     count.textContent = `${list.length} results`;
+    count.hidden = false;
     if(list.length===0){
       const li = document.createElement('li');
       li.textContent = 'No results';
@@ -88,5 +89,12 @@
   const initial = input.value;
   const initList = search(initial);
   render(initList, initial);
-  title.textContent = 'Emoji Picker';
-})();
+  // keep input focused on load and prevent page jump
+  try{ input.focus({preventScroll:true}); }catch(e){ input.focus(); }
+  // remove page heading in favor of input as primary UI
+  title && title.remove();
+  // ensure title text is set for accessibility if element reappears
+  // keep id usage consistent elsewhere
+  })();
+
+
