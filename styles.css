@@ -99,4 +99,19 @@ input[type=search]{
     --border: #222;
     --surface: #111;
   }
+
+  input[type=search]{
+    background: var(--surface);
+    color: var(--fg);
+    border: 1px solid var(--border);
+  }
+
+  input[type=search]::placeholder{
+    color: var(--muted);
+  }
+
+  #results button{
+    color: var(--fg);
+  }
 }
+
