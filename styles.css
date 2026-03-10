@@ -1,10 +1,10 @@
-:root{
-  --bg:#fff;
-  --fg:#111;
-  --muted:#666;
-  --accent:#0b5fff;
-  --border:#ddd;
-  --surface:#fafafa;
+:root {
+  --bg: #fff;
+  --fg: #111;
+  --muted: #666;
+  --accent: #0b5fff;
+  --border: #ddd;
+  --surface: #fafafa;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
@@ -91,13 +91,12 @@ input[type=search]{
 }
 
 @media (prefers-color-scheme: dark) {
-@media (prefers-color-scheme: dark) {
-:root{
-  --bg:#000;
-  --fg:#fff;
-  --muted:#999;
-  --accent:#4aa3ff;
-  --border:#222;
-  --surface:#111;
-}
+  :root{
+    --bg: #000;
+    --fg: #fff;
+    --muted: #999;
+    --accent: #4aa3ff;
+    --border: #222;
+    --surface: #111;
+  }
 }
