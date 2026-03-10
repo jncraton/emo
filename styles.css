@@ -38,8 +38,9 @@ input[type=search]{
   margin:0.5rem 0 0;
   padding:0;
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  grid-template-columns:repeat(auto-fill,160px);
   gap:0.5rem;
+  justify-content:start;
 }
 
 #results button{
@@ -51,6 +52,16 @@ input[type=search]{
   border:1px solid #eee;
   background:#fafafa;
   cursor:pointer;
+  width:100%;
+  overflow:hidden;
+  white-space:nowrap;
+  text-align:left;
+}
+
+.name{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 .emoji{
