@@ -6,6 +6,8 @@
 
 A lightweight, dependency-free web tool for searching and copying emojis. The application uses plain JavaScript and CSS, requiring no build steps for the browser.
 
+[Demo](https://jncraton.github.io/emo/)
+
 ## Features
 
 - Instant search functionality
