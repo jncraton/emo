@@ -1,4 +1,5 @@
 const EMOJIS = [
+  { emoji: '❤️', name: 'red heart' },
   { emoji: '😀', name: 'grinning face' },
   { emoji: '😃', name: 'grinning face with big eyes' },
   { emoji: '😄', name: 'grinning face with smiling eyes' },
@@ -72,7 +73,6 @@ const EMOJIS = [
   { emoji: '👀', name: 'eyes' },
   { emoji: '👅', name: 'tongue' },
   { emoji: '👄', name: 'mouth' },
-  { emoji: '❤️', name: 'red heart' },
   { emoji: '💔', name: 'broken heart' },
   { emoji: '❣️', name: 'heart exclamation' },
   { emoji: '💕', name: 'two hearts' },
